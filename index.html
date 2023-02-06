@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycle Renting Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=BioRhyme&family=Dancing+Script&family=Gravitas+One&display=swap" rel="stylesheet">
+   <style>
+    :root{
+--baby-blue-eyes: #a3cef1ff;
+        --yale-blue: #274c77ff;
+    }
+.navbar {
+    height: 8%;
+        width: 100%;
+        background-color: var(--baby-blue-eyes);
+    }
+    
+    #navbar-nav mr-auto {
+        font-size: 20px;
+        color: white;
+    }
+   
+.container {
+  /*position: absolute;
+ height: 300px;
+  width: 600px;
+  top: 60px;*/
+  left: calc(50% - 300px);
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  height: 280px;
+  width: 200px;
+  background: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 1.5rem #000;
+ margin-left: -30px; 
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: black;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+
+.bar {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  height: 5px;
+  width: 200px;
+}*/
+.product-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}*/
+
+
+
+.card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+.card:hover .stroke {
+ 
+  transition: 0.6s ease-out;
+}
+.button{
+    font-size: 21px;
+    position: absolute;
+    left: 20px;
+    border-radius: 10px;
+    top: 150px;
+    padding: 10px;
+}
+button{
+    padding: 5px;
+    background-color: var(--baby-blue-eyes);
+    border-radius: 100px;
+}
+button:hover{
+    background-color: var(--yale-blue);
+    color: white;
+}
+   </style> 
+</head>
+<body>
+     <header class="header">
+    <div class="logo-box">
+        <img src="logo.png" alt="Cycle" class="logo">
+    </div>
+    <div class="text-box">
+        <h1 class="heading">
+            <span class="main-heading">Pedal On</span> 
+            <span class="sub-heading">To bike, or not to bike: that is not a question
+        </h1>
+        <a href="signup.html" class="btn btn-white" style="background-color: white;
+        color: #777;
+        padding: 10px 35px;
+        display: inline-block;border-radius: 100px;
+    transition: all .3s;" target="_blank">Rent a Cycle</a>
+    </div></header>
+
+   <div class="welcome">
+<p>Welcome to Pedal On</p>
+   </div>
+   <div class="slider">
+    <p><center>Some of the newest cycles in the towns</center></p>
+    <section>
+        <div class="container">
+            <div class="card">
+              <h3 class="title">street racer</h3>
+              <div class="bar">
+                <div class="product-img">
+                    <img src="pic1.png" alt="cycle1"style="height: 100px;">
+                </div>
+                <a href="product.html">
+                  <div class="button" >
+                    <button>Rent Now</button>
+                  </div>
+                </a>
+              </div>
+              
+            </div>
+            <div class="card">
+              <h3 class="title">Kross Eco</h3>
+              <div class="bar">
+                <div class="product-img">
+                    <img src="pic2.png" alt="cycle1" style="height: 100px;">
+                </div>
+              
+                <a href="product.html">
+                  <div class="button" >
+                    <button>Rent Now</button>
+                  </div>
+                </a>
+              </div>
+            
+            </div>
+            
+            <div class="card">
+              <h3 class="title">Atlas Mettle</h3>
+              <div class="bar">
+                <div class="product-img">
+                    <img src="pic3.png" alt="cycle1"style="height: 100px;">
+                </div>
+                <a href="product.html">
+                  <div class="button" >
+                    <button>Rent Now</button>
+                  </div>
+                </a>
+              </div></div>
+              <div class="card">
+                <h3 class="title">Hercules Brut</h3>
+                <div class="bar">
+                    <div class="product-img">
+                        <img src="pic4.png" alt="cycle1"style="height: 100px;">
+                    </div>
+                    <a href="product.html">
+                      <div class="button" >
+                        <button>Rent Now</button>
+                      </div>
+                    </a>
+                
+                  </div>
+               </div>
+               
+          
+              
+            </div>
+          </div>
+          
+</section>  <br><br><br><br><br><br>
+<br><br><br><br><br><br><script type="text/javascript" src="app.js"></script>
+ 
+<nav class="navbar fixed-bottom navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Rent-a-Cycle</a>
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse"
+                id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    Home
+                    <span class="sr-only">
+                        (current)
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="product.html">
+                    Products
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">
+                    Login
+                </a>
+            </li> <li class="nav-item">
+                <a class="nav-link" href="signup.html">
+                    Register
+                </a>
+            </li> <li class="nav-item">
+                <a class="nav-link" href="feedback.html">
+                    Feedback
+                </a>
+            </li>
+        </ul>
+
+
+    </div>
+   
+ <footer>
+<br>
+    <div class="footer1">
+    <ul class="footer_ele">
+        <li><a href="">About</a></li>
+        <li><a href="terms.html">Terms and Conditions</a></li>
+        <li>©️Pedal On by FullStackers</li>
+    </ul>
+</div>
+</footer>
+</nav>
+<center>
+  <h2>Contact us on</h2>
+  <p></p><a href="mailto:rentacycle23@gmail.com"><b>
+    rentacycle23@gmail.com</b></a> </a>
+</center>
+ <br><br>
+</body>
+<link rel="stylesheet"
+href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity=
+"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity=
+"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous">
+</script>
+
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity=
+"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous">
+</script>
+
+<script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity=
+"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous">
+</script>
+</html>
